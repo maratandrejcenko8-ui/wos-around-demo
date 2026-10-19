@@ -1,0 +1,103 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>WOS Fashion Intelligence — Around</title>
+<style>
+:root{--bg:#f4f2ee;--paper:#fff;--ink:#252622;--muted:#77766f;--line:#e7e3dc;--accent:#c96b51;--soft:#f7e9e3;--green:#e8f1eb}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.wrap{max-width:1100px;margin:auto;padding:28px 22px 50px}.top,.head,.footer{display:flex;justify-content:space-between;gap:16px;align-items:center}.brand{font-size:12px;font-weight:800;letter-spacing:.15em}.brand span{color:var(--accent)}.tag,.pill{font-size:11px;border:1px solid var(--line);border-radius:999px;padding:6px 10px;background:white;color:var(--muted)}.hero{margin-top:22px;background:#252622;color:#fff;border-radius:20px;padding:30px;display:grid;grid-template-columns:1.5fr 1fr;gap:24px}.eyebrow{color:#d8b2a5;font-size:11px;text-transform:uppercase;letter-spacing:.15em;font-weight:700}.hero h1{font-size:clamp(32px,5vw,49px);line-height:1.04;letter-spacing:-.05em;margin:14px 0}.hero p{color:#d6d5cf;max-width:650px}.side{border-left:1px solid #494a44;padding-left:25px;display:flex;flex-direction:column;justify-content:center}.big{font-size:48px;font-weight:800;letter-spacing:-.05em;line-height:1}.big small{font-size:14px;font-weight:500;letter-spacing:0;color:#ddd}.muted{color:var(--muted);font-size:12px}.side .muted{color:#bbb}.head{align-items:end;margin:28px 0 13px}.head h2{font-size:21px;letter-spacing:-.03em;margin:0}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.kpi,.card,.rec{background:var(--paper);border:1px solid var(--line);border-radius:15px;padding:18px}.num{font-size:30px;font-weight:800;letter-spacing:-.04em}.kpi .muted{margin-top:4px}.twocol{display:grid;grid-template-columns:1fr 1fr;gap:13px}.card h3{font-size:16px;margin:0 0 4px}.bar{display:grid;grid-template-columns:130px 1fr 22px;gap:9px;align-items:center;margin:18px 0;font-size:12px}.track{height:9px;border-radius:99px;background:#efede8;overflow:hidden}.fill{height:100%;background:var(--accent);border-radius:99px}.insight{display:grid;grid-template-columns:28px 1fr;gap:10px;border-top:1px solid var(--line);padding:13px 0}.insight:first-of-type{border-top:0}.dot{background:var(--soft);color:#9d4d37;border-radius:8px;width:27px;height:27px;display:grid;place-items:center;font-weight:800;font-size:12px}.insight strong{font-size:13px}.insight p,.rec p{font-size:12px;color:var(--muted);margin:4px 0 0}.tablewrap{overflow:auto}.table{width:100%;border-collapse:collapse;font-size:12px}.table th{text-align:left;font-size:10px;letter-spacing:.07em;color:var(--muted);text-transform:uppercase;padding:10px;border-bottom:1px solid var(--line)}.table td{padding:12px 10px;border-bottom:1px solid var(--line);vertical-align:top;min-width:100px}.pill{display:inline-block;padding:4px 7px;background:var(--soft);border:0;color:#994d38;font-weight:700}.reco{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.rec .index{color:var(--accent);font-size:10px;font-weight:800;letter-spacing:.1em}.rec h3{font-size:14px;margin:9px 0}.note{margin-top:16px;padding:14px 16px;border:1px solid #efe1c7;background:#fff8ed;border-radius:12px;color:#665b49;font-size:12px}.footer{border-top:1px solid var(--line);margin-top:22px;padding-top:16px;flex-wrap:wrap;color:var(--muted);font-size:11px}.footer a{color:inherit}@media(max-width:700px){.wrap{padding:15px 12px 32px}.hero,.twocol{grid-template-columns:1fr}.hero{padding:22px}.side{border-left:0;border-top:1px solid #494a44;padding:18px 0 0}.grid{grid-template-columns:repeat(2,1fr)}.reco{grid-template-columns:1fr}.head{align-items:start;flex-direction:column}.bar{grid-template-columns:105px 1fr 20px}.kpi{padding:14px}}
+
+.interactive{padding:20px}.controls{display:grid;grid-template-columns:1fr 1fr 1.4fr;gap:12px}.controls label,.editor label{display:flex;flex-direction:column;gap:7px;font-size:12px;font-weight:700;color:#55564f}.controls select,.controls input,.editor textarea{width:100%;font:inherit;color:var(--ink);background:#fbfaf8;border:1px solid var(--line);border-radius:10px;padding:11px 12px;outline:none}.controls select:focus,.controls input:focus,.editor textarea:focus{border-color:var(--accent);box-shadow:0 0 0 3px #c96b511c}.interactive-status{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:18px 0}.interactive-status>div{background:#f7f5f1;border-radius:11px;padding:13px}.interactive-status .num{font-size:25px}.priority-value,.focus-value{font-weight:750;margin-top:7px;font-size:14px}.editor{border-top:1px solid var(--line);padding-top:17px}.editor textarea{margin-top:8px;resize:vertical;line-height:1.5}.editor-footer{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:9px 0 14px}.editor-footer button{border:1px solid var(--line);background:white;border-radius:8px;padding:8px 11px;cursor:pointer;color:var(--ink);font-weight:700}.editor-footer button:hover{border-color:var(--accent)}.live-plan{background:#252622;color:white;padding:15px 17px;border-radius:12px}.live-plan .eyebrow{color:#d8b2a5}.live-plan p{margin:7px 0 0;color:#f2eee9;font-size:13px}.table tbody tr[hidden]{display:none}@media(max-width:700px){.controls,.interactive-status{grid-template-columns:1fr}.editor-footer{align-items:flex-start;flex-direction:column}}
+
+</style></head><body><main class="wrap">
+<div class="top"><div class="brand">WOS <span>FASHION INTELLIGENCE</span></div><div class="tag">DEMO REPORT · AROUND</div></div>
+<section class="hero"><div><div class="eyebrow">Customer intelligence / pilot sample</div><h1>What customers<br>are asking for.</h1><p>Как повторяющиеся вопросы покупателей могут подсказать, что стоит улучшить в ассортименте, информации о товарах и планировании поступлений.</p></div><div class="side"><div class="big">5 <small>скриншотов</small></div><p>Ручная выборка из предоставленных фрагментов Telegram-обсуждений Around.</p><div class="muted">Даты видимых сообщений: 2–16 октября. Это не полный парсинг канала.</div></div></section>
+
+<div class="head" id="interactive-head"><h2>Интерактивная панель</h2><div class="muted">Меняйте фильтры и приоритеты — отчёт обновится прямо здесь</div></div>
+<section class="card interactive">
+  <div class="controls">
+    <label>Показать тему
+      <select id="topicFilter">
+        <option value="all">Все темы</option>
+        <option value="availability">Наличие и сроки</option>
+        <option value="variant">Цвет и варианты</option>
+        <option value="size">Размеры</option>
+        <option value="alternative">Альтернативы</option>
+        <option value="catalog">Каталог</option>
+      </select>
+    </label>
+    <label>Приоритет для команды
+      <select id="priority">
+        <option value="high">Высокий</option>
+        <option value="medium" selected>Средний</option>
+        <option value="low">Низкий</option>
+      </select>
+    </label>
+    <label class="searchlabel">Найти в наблюдениях
+      <input id="searchRows" type="search" placeholder="Например, шапки, цвет, твид…">
+    </label>
+  </div>
+  <div class="interactive-status">
+    <div><span class="muted">Подходящих наблюдений</span><div class="num" id="visibleCount">5</div></div>
+    <div><span class="muted">Выбранный приоритет</span><div class="priority-value" id="priorityValue">Средний</div></div>
+    <div><span class="muted">Фокус теста</span><div class="focus-value" id="focusValue">Проверить повторяемость сигналов</div></div>
+  </div>
+  <div class="editor">
+    <label for="actionEditor">Измените план действия (текст можно редактировать)</label>
+    <textarea id="actionEditor" rows="3">Сначала сверить повторяющиеся вопросы о поступлениях с актуальными остатками, затем проверить, поможет ли более заметный статус товара сократить повторные вопросы.</textarea>
+    <div class="editor-footer"><span class="muted">Изменения видны в этой демо-странице и не отправляются в систему.</span><button type="button" id="resetDemo">Сбросить демо</button></div>
+    <div class="live-plan"><span class="eyebrow">ТЕКУЩИЙ ПЛАН ТЕСТА</span><p id="planPreview">Сначала сверить повторяющиеся вопросы о поступлениях с актуальными остатками, затем проверить, поможет ли более заметный статус товара сократить повторные вопросы.</p></div>
+  </div>
+</section>
+
+<div class="head"><h2>Сигналы в выборке</h2><div class="muted">Счётчик видимых тем, не статистика всех обращений</div></div>
+<div class="grid"><div class="kpi"><div class="num">3</div><div class="muted">темы про наличие и сроки</div><div class="muted">Шапки, перчатки, брюки</div></div><div class="kpi"><div class="num">2</div><div class="muted">вопроса о цвете / варианте</div><div class="muted">Манишка, двухцветные перчатки</div></div><div class="kpi"><div class="num">1</div><div class="muted">вопрос о размере</div><div class="muted">Обхват головы: 58 или 60 см</div></div><div class="kpi"><div class="num">1</div><div class="muted">модель не повторится</div><div class="muted">Брюки из итальянской шерсти</div></div></div>
+<div class="head"><h2>Что заметно в вопросах</h2><div class="muted">Предварительные наблюдения по скриншотам</div></div>
+<div class="twocol"><section class="card"><h3>Темы запросов</h3><p class="muted">Ручная классификация предоставленных фрагментов</p><div class="bar"><span>Наличие / сроки</span><div class="track"><div class="fill" style="width:90%"></div></div><b>3</b></div><div class="bar"><span>Цвет / вариант</span><div class="track"><div class="fill" style="width:60%"></div></div><b>2</b></div><div class="bar"><span>Размер</span><div class="track"><div class="fill" style="width:30%"></div></div><b>1</b></div><div class="bar"><span>Повтор модели</span><div class="track"><div class="fill" style="width:30%"></div></div><b>1</b></div><div class="note">Категории могут пересекаться: один вопрос может относиться и к наличию, и к цвету.</div></section>
+<section class="card"><h3>Ключевые наблюдения</h3><p class="muted">Что может быть полезно команде Around</p><div class="insight"><div class="dot">01</div><div><strong>Спрос на конкретные варианты</strong><p>Спрашивают про полосатые шапки, двухцветные перчатки и цвета манишки. Такие запросы можно сводить по модели и цвету.</p></div></div><div class="insight"><div class="dot">02</div><div><strong>Важны сроки поступления</strong><p>В одном ответе указан ориентир «в конце следующей недели». Можно фиксировать обещанные сроки и сверять с фактическим поступлением.</p></div></div><div class="insight"><div class="dot">03</div><div><strong>Интерес к альтернативам</strong><p>Брюки из итальянской шерсти не повторятся, но бренд сообщил о повторе модели из твида. Это повод отслеживать запросы на замену.</p></div></div></section></div>
+<div class="head"><h2>Примеры сигналов</h2><div class="muted">На основе видимых сообщений и ответов бренда</div></div>
+<section class="card tablewrap"><table class="table"><thead><tr><th>Категория</th><th>Наблюдение</th><th>Ответ бренда / контекст</th><th>Возможное действие</th></tr></thead><tbody>
+<tr data-topic="availability size" data-search="шапки полосатые размер 58 60 поступление"><td><b>Шапки</b><br><span class="pill">Повторный интерес</span></td><td>Спрашивают о полосатых шапках; отдельно уточняют размер 58 или 60 см.</td><td>В ответе указано, что шапки в рубчик ожидаются в конце следующей недели.</td><td>Показывать подтверждённый статус поступления и размерную подсказку.</td></tr>
+<tr data-topic="availability variant" data-search="перчатки двухцветные варианты сроки поступления"><td><b>Перчатки</b><br><span class="pill">Варианты</span></td><td>Вопрос о двухцветных перчатках и сроках появления.</td><td>Ответ касается перчаток с отворотом из объёмной шерсти.</td><td>Разделять текущие цвета и ожидаемые варианты в карточке товара.</td></tr>
+<tr data-topic="variant" data-search="манишка цвета графит красный темно-синий"><td><b>Манишка</b><br><span class="pill">Цвета</span></td><td>Покупатель уточняет, будет ли только тёмно-синий цвет.</td><td>Бренд ответил: графит, красный и тёмно-синий.</td><td>Показывать цветовые варианты в одном месте и сверять наличие каждого.</td></tr>
+<tr data-topic="alternative availability" data-search="брюки итальянская шерсть твид альтернатива"><td><b>Брюки</b><br><span class="pill">Альтернатива</span></td><td>Покупатель уточняет, будут ли ещё продаваться брюки из итальянской шерсти.</td><td>Бренд сообщил, что модель не повторится, но повторится из твида.</td><td>Предлагать похожую вещь, если она доступна, заинтересованным покупателям.</td></tr>
+<tr data-topic="catalog size variant" data-search="каталог фильтры размер цвет состав шапки перчатки трикотаж"><td><b>Каталог</b><br><span class="pill">Контекст</span></td><td>На сайте есть фильтры по размеру, цвету и составу, а также категории шапок, перчаток и трикотажа.</td><td>Информация видна в публичном каталоге.</td><td>Проверить, легко ли найти нужный вариант. Сам каталог не доказывает дефицит.</td></tr>
+</tbody></table></section>
+<div class="head"><h2>Рекомендации для теста</h2><div class="muted">Небольшие действия, которые можно проверить</div></div>
+<div class="reco"><div class="rec"><div class="index">01 / PRODUCT INFO</div><h3>Уточнить блок наличия и поступлений</h3><p>Показывать статус «в наличии», «ожидается» или «модель снята»; срок указывать только после подтверждения командой.</p></div><div class="rec"><div class="index">02 / CUSTOMER INSIGHT</div><h3>Собирать запросы по цветам</h3><p>Фиксировать вопросы по конкретным моделям и цветам, чтобы оценить повторяемость на полной выборке.</p></div><div class="rec"><div class="index">03 / RETENTION</div><h3>Предлагать альтернативу снятой модели</h3><p>Связывать снятые позиции с похожими товарами и сообщать об альтернативах тем, кто согласен получать такие сообщения.</p></div></div>
+<div class="note"><b>Методология и ограничения.</b> Отчёт собран вручную по пяти скриншотам. Здесь нет полной истории Telegram, заказов, продаж, складских остатков или конверсии. Числа — счётчик видимых примеров, а не репрезентативная статистика. Нельзя заключить, что конкретные товары теряют продажи или что спрос превышает остатки. Для надёжного вывода нужны согласованный полный набор обращений и данные о наличии.</div>
+<div class="footer"><div><b>WOS Fashion Intelligence</b> · Customer signals → actionable insights</div><div>Каталог: <a href="https://around.com.ru/catalog/all/" target="_blank" rel="noopener">around.com.ru/catalog/all</a> · <a href="https://around.com.ru/" target="_blank" rel="noopener">Главная</a></div><div>DEMO · Не основан на полной клиентской базе Around</div></div>
+</main>
+<script>
+(function(){
+ const topic=document.getElementById('topicFilter');
+ const search=document.getElementById('searchRows');
+ const priority=document.getElementById('priority');
+ const count=document.getElementById('visibleCount');
+ const priorityValue=document.getElementById('priorityValue');
+ const focusValue=document.getElementById('focusValue');
+ const editor=document.getElementById('actionEditor');
+ const preview=document.getElementById('planPreview');
+ const reset=document.getElementById('resetDemo');
+ const rows=Array.from(document.querySelectorAll('.table tbody tr[data-topic]'));
+ const initialPlan=editor.value;
+ const priorities={high:'Высокий',medium:'Средний',low:'Низкий'};
+ const focus={all:'Проверить повторяемость сигналов',availability:'Сверить вопросы о сроках с остатками',variant:'Проверить спрос по цветам и вариантам',size:'Уточнить размерную информацию',alternative:'Проверить подходящие альтернативы',catalog:'Проверить удобство поиска в каталоге'};
+ function update(){
+   const t=topic.value, q=search.value.trim().toLocaleLowerCase('ru');
+   let n=0;
+   rows.forEach(row=>{
+     const topics=row.dataset.topic.split(' ');
+     const hay=(row.dataset.search+' '+row.innerText).toLocaleLowerCase('ru');
+     const show=(t==='all'||topics.includes(t))&&(!q||hay.includes(q));
+     row.hidden=!show; if(show)n++;
+   });
+   count.textContent=n;
+   priorityValue.textContent=priorities[priority.value];
+   focusValue.textContent=focus[t];
+   preview.textContent=editor.value.trim()||'Добавьте план действия в поле выше.';
+ }
+ [topic,search,priority,editor].forEach(el=>el.addEventListener('input',update));
+ reset.addEventListener('click',()=>{
+   topic.value='all';search.value='';priority.value='medium';editor.value=initialPlan;update();
+ });
+ update();
+})();
+</script>
+
+</body></html>
